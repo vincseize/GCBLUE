@@ -1,0 +1,162 @@
+
+
+form#product {
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  /*width: 400px;*/
+  width: 75%;
+  height: 100%;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  position:fixed;
+}
+
+
+
+
+
+
+
+form#product fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+form#product fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+form#product legend {
+  color: #384313;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 1px #c0d576;
+}
+
+form#product > fieldset > legend:before {
+  /* content: "Étape " counter(fieldsets) " : ";
+  counter-increment: fieldsets;
+  */
+}
+
+form#product fieldset fieldset legend {
+  color: #111111;
+  font-size: 12px;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+
+form#product ol li {
+  background: #b9cf6a;
+  background: rgba(255,255,255,.3);
+  border-color: #e3ebc3;
+  border-color: rgba(255,255,255,.6);
+  border-style: solid;
+  border-width: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  list-style: none;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  width:270px;
+}
+
+form#product ol ol li {
+  background: none;
+  border: none;
+  float: left;
+}
+
+form#product input {
+    width:150px;
+}
+
+form#product label {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;  
+    color: #666;  
+}
+
+
+.colorBgForm {
+  background: #9cbc2c;
+}
+
+#btnAddActionCentre {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 200px;
+}
+
+#btnAddActionCentre:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin_list_products{
+    position: absolute;
+    z-index: 1000;
+    width: 30%;
+    max-width: 30%;
+    right:10px;
+}
+
+
+.edit-content{
+    position: absolute;
+    margin-bottom: 5px;
+    right: 10px;
+}
+
+.name-content{
+    color: #045FB4;
+    font-weight: bold;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+
+
+.message-content{
+    width: 100%;
+    max-width: 100%;
+    background-color: #D7D7D7;
+    word-break: break-all; 
+    word-wrap: break-word;
+}

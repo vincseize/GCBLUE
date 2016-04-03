@@ -1,0 +1,92 @@
+html, body {height: 100%; margin:0px !important;}
+
+#header{
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #09F;
+    z-index: 1;
+    background-image: url(../img/logo.png) ;
+    background-repeat: no-repeat ;
+    text-indent: 80px;
+}
+
+#content{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#content_home{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+#footer_home{
+    background-color: #09F;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+
+#footer{
+    background-color: #09F;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+.comment-list-box{
+    width:90%;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+div.comment-list-box table.table-comment-list-box table.name td.name-content{  /*todo*/
+    color: #045FB4;
+    font-weight: bold;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+
+#name-content{ /*todo*/
+    color: #045FB4;
+    font-weight: bold;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+
+
+.message-content{
+    width: 100%;
+    max-width: 100%;
+    background-color: #A4A4A4;
+    word-break: break-all; 
+    word-wrap: break-word;
+}
+

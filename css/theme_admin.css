@@ -1,0 +1,119 @@
+
+
+.current {
+
+    color: #2262AD;
+
+}
+
+section {
+
+    margin: 80px auto 40px;
+    max-width: 980px;
+    position: relative;
+    padding: 20px
+
+}
+
+
+
+
+
+#content_admin{
+    padding-top: 110px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+
+    overflow-y: scroll;
+}
+
+
+#admin_list_products {
+    z-index: 99;
+}
+
+
+
+#comment-list-box{
+ 
+}
+
+
+
+.message-box{
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+.btnDeleteAction{
+    background-color: red;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+.btnEditAction{
+    background-color: green;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+
+
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) { /*If device width is higher than 640px use this css and if less than 640px use above */
+
+    header {
+
+        position: absolute;
+
+    }
+
+    #menu-icon {
+
+        display:inline-block;
+
+    }
+
+    nav ul, nav:active ul { 
+
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+
+    }
+
+    nav li {
+
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    nav:hover ul {
+
+        display: block;
+
+    }
+
+
+
+
+
+}
