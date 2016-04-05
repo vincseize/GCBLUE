@@ -116,7 +116,9 @@ div:empty:before {
 						// $View_Details_Type="No Type Selected";
 
 									// todo owl_types  from globals, unify with crud products
-					              	$sql2 = $db_handle->runQuery("SELECT * FROM owl_types WHERE id='".$id_type."'");
+					              	// $sql2 = $db_handle->runQuery("SELECT * FROM owl_types WHERE id='".$id_type."'");
+					              	/*$sql2 = $db_handle->runQuery("SELECT * FROM gdc_portalstypes WHERE id='".$id_type."'");*/
+					              	$sql2 = $db_handle->runQuery("SELECT * FROM ".$TB_TYPES." WHERE id='".$id_type."'");
 					              	if(!empty($sql2)) {
 										foreach($sql2 as $kk=>$vv) {
 											$type_id = utf8_decode($sql2[$kk]["id"]);
@@ -140,29 +142,33 @@ div:empty:before {
 
 		                    echo "<div class='col-lg-3 col-md-6'>";
 		                        echo "<div class='panel panel-primary' >";
-		                            echo "<div class='panel-heading'>";
+		                            echo "<div class='panel-heading' style='auto;background-color:#404040'>";
 		                                echo "<div class='row'>";
 		                                    echo "<div class='col-xs-3'>";
 		                                        echo "<i class='fa fa-home fa-5x'></i>";
 		                                    echo "</div>";
 		                                    echo "<div class='col-xs-9 text-right'>";
 		                                        echo "<div class='medium' style='font-size:20px;font-weight:bold;'>".$product_nom."</div>";
-													echo "<div>".$localisation_x."</div>";		                                        
-													echo "<div>".$localisation_y."</div>";		                                        	                                        
-													echo "<div>".$pays."</div>";
-													echo "<div>".$centre_ville."</div>";
-													echo "<div>".$code_postal."</div>";
-													echo "<div>".$adresse."</div>";
+		                                        
+		                                        	echo "<div>".$comments."</div>";
+		                                        	echo "<div><br></div>";
+													echo "<div>".$localisation_x.", ".$localisation_y."</div>";		                                        
+/*													echo "<div>".$localisation_y."</div>";		*/                                        	                                        
+
+													/*echo "<div>".$centre_ville."</div>";*/
+													echo "<div>".$code_postal.", ".$centre_ville."</div>";
+/*													echo "<div>".$adresse."</div>";
 													echo "<div>".$phone."</div>";
 													echo "<div>".$public."</div>";
-													echo "<div>".$horaires."</div>";		                                        
+													echo "<div>".$horaires."</div>";*/		
+													echo "<div>".$pays."</div>";                                        
 		                                    echo "</div>";
 		                                echo "</div>";
 		                            echo "</div>";
 		                            echo "<a href='#'>";
 		                                echo "<div class='panel-footer' style='auto;background-color:".$color_type."' onClick=\"toggle_type('".$toggleType_id."')\">";
 		                                    // echo "<span class='pull-left'>View Details Type</span>";
-		                                    echo "<span class='pull-left'>".$type."</span>";
+		                                    echo "<span class='pull-left' style='font-weight: 400;color: white;background-color: ".$color_type.";padding:.2em 1em;''>".$type."</span>";
 		                                    echo "<span class='pull-right'><i class='fa fa-arrow-circle-right'></i></span>";
 		                                    echo "<div class='clearfix'></div>";
 		                                echo "</div>";
@@ -223,21 +229,5 @@ div:empty:before {
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
